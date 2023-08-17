@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif !important;
+ }
+
+ .landerMain {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url("../images/pexels-cottonbro.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+ }
+
+ .main{
+   width: 100%;
+   min-height: 100vh;
+ }
+
+ .navbar {
+    height: auto;
+    margin: auto;
+ }
+
+ .icon{
+   display: flex;
+   align-self: center;
+   background-color: #E3CCAE;
+   padding: 0.25rem 0.5rem;
+   border-radius: 5px
+ }
+
+ .logo {
+    color: #4292dc;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 2%;
+    float: left;
+    width: 150px;
+    height: 120px;
+ }
+
+ .logoImg{
+   width: 30px;
+   height: 30px;
+   margin-right:  0.5rem;
+ }
+
+ .icon h5{
+   align-self: center;
+   margin: 0;
+ }
+
+ .menu {
+    float: left;
+    height: 40px;
+    display: flex;
+ }
+
+ .navBarWidth{
+   width: 75%;
+ }
+
+ .menu ul{
+   padding: 0rem 1.5rem;
+ }
+
+ .menu ul li a{
+   color: #6dabe4;
+ }
+
+ .menu ul li a:hover{
+   border-bottom: 5px solid #4292dc;
+   color:#4292dc;
+ }
+
+ ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ ul li {
+    list-style: none;
+    margin-left: 3rem;
+    font-size: 14px;
+ }
+
+ ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    font-size: 1rem;
+ }
+
+ .link {
+    margin: auto;
+    width: 42.5%;
+    margin-top: 5rem;
+ }
+
+ .link a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+ }
+
+ .link button {
+    font-family: Arial;
+    height: 150px;
+    background: #FF7B54;
+    border: 2px solid #FF7B54;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: ease-in-out;
+    margin: 2rem;
+    width: 275px;
+ }
+
+ .link a:hover {
+    color: #fff;
+ }
+
+ .link button:hover {
+    background: #D1512D;
+    border: 2px solid #D1512D;
+    color: #fff;
+ }
+
+ button {
+    cursor: pointer;
+ }
+
+ footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: gainsboro;
+   color: white;
+   text-align: center;
+ }
+
+ /**
+ * Centered Vertical line with CSS Gradient
+ */
+.verticalSplitter {
+   background: #fff;	
+   background: linear-gradient(180deg, transparent, #353535, transparent);
+   background-position: 50%;
+   background-repeat: repeat-y;
+   background-size: 1px auto;
+}
+
+/* Setup */
+.verticalSplitter {
+   border: 1px solid #ccc;
+   height: 60vh;
+   width: 90%;
+   margin: 0 5rem;
+}
+
+ @media only screen and (max-width: 600px) {
+    .navbar, .navBarWidth{
+       width: 100% !important;
+    }
+    .navBarWidth .headerIcon{
+      display: none;
+    }
+    .icon{
+       display: none;
+    }
+    ul li{
+       padding-left: 0.5rem;
+       margin-left: 0.5rem;
+    }
+    .link{
+      margin-top: 1rem;
+      width: 100%;
+    }
+    .link div{
+       display: block !important;
+       margin: 0.5rem;
+    }
+
+    .link button{
+      height: 75px;
+    }
+    .menu, .menu ul{
+      padding: 0rem;
+      width: 100%;
+    }
+
+    .menuList {
+      padding-left: 0 !important;
+    }
+
+    .verticalSplitter {
+      border: 1px solid #ccc;
+      height: 0vh;
+      width: 90%;
+      margin: 0 5rem;
+   }
+ }
